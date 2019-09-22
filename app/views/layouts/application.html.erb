@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Twitter</title>
+    <title>お土産検索</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,25 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="main-header">
+      <ul>
+        <li>新規登録</li>
+        <li>ログイン</li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="sidebar">
+        <div class="sidebar__item">
+        　ああああああ
+          <!-- 中身 -->
+        </div>
+      </div>
+      <main class="main">
+        <%= yield %>
+      </main>
+    </div>
+    <div class="main-footer">
+      jonconan
+    </div>
   </body>
 </html>
