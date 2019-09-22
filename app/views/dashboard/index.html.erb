@@ -1,4 +1,15 @@
 <h1>Dashboard#index</h1>
 <p>Find me in app/views/dashboard/index.html.erb</p>
 
-<p>現在時刻 <%= @today %></p>
+<table>
+  <% @regions.each do |region| %>
+    <tr>
+      <td colspan="2"><%= region.name %></td>
+    </tr>
+    <% region.prefecture.each do |prefecture| %>
+      <tr>
+        <td><%= prefecture.name %></td>
+      </tr>
+    <% end %>
+  <% end %>
+</table>
