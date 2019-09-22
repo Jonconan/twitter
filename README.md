@@ -1,24 +1,18 @@
-# README
+# READ ME
+## 動作
+https://omiyage-search.herokuapp.com/
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## herokuへのdeploy
 
-Things you may want to cover:
+```
+$ heroku login
+$ git push heroku master
+```
 
-* Ruby version
+migrationなどDBへの変更があった場合は
 
-* System dependencies
+```
+$ heroku run rails db:migrate
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+も忘れずに
