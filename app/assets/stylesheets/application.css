@@ -51,6 +51,7 @@ body {
   width: 30%;
   max-width: 300px;
   background: #DDD;
+  padding: 10px;
 }
 .sidebar__item {
   margin-bottom: 20px;
@@ -59,6 +60,7 @@ body {
   display: block;
   width: 100%;
   background: #d5fffa;
+  padding: 10px;
 }
 .main-footer {
   width: 100%;
