@@ -1,0 +1,41 @@
+
+<h1>アカウント登録</h1>
+
+
+
+<%= form_for @user,:url => {:action => :create} do |f| %>
+  <ul>
+    <div class="column">
+      <label><%= f.label :user_id, 'ユーザーID' %></label><must>*</must>
+      <li>
+        <%= f.text_field :user_id, :class => "input_form", :placeholder => "ログインする際に必要なID" %>
+      </li>
+    </div>
+    <div class="column">
+      <label><%= f.label :user_name, 'ユーザー名' %></label><must>*</must>
+      <li>
+        <%= f.text_field :user_name, :class => "input_form", :placeholder => "公開されるニックネーム" %>
+      </li>
+    </div>
+    <div class="column">
+      <label><%= f.label :last_name, '本名（公開されません）' %></label><must>*</must>
+      <li>
+        <%= f.text_field :last_name, :class => "input_form name_form", :placeholder => "苗字" %>
+      　<%= f.text_field :first_name, :class => "input_form name_form", :placeholder => "名前" %>
+      </li>
+    </div>
+    <div class="column">
+      <label><%= f.label :email, 'メールアドレス' %></label><must>*</must>
+      <li>
+        <%= f.text_field :email, :class => "input_form email_form", :placeholder => "aaaaaa@example.com" %>
+      </li>
+    </div>
+    <div class="column">
+      <label><%= f.label :birthday, '誕生日' %></label><must>*</must>
+      <li>
+        <%= f.text_field :birthday, :class => "input_form", :placeholder => "1991/10/20" %>
+      </li>
+    </div>
+  </ul>
+  <%= f.submit :class => "submit" %>
+<% end %>

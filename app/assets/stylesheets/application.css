@@ -13,13 +13,20 @@
  *= require_tree .
  *= require_self
  */
-
-body {
+html, body {
   width: 100%;
+  height: 100%;
+  /* font-family: "Rokkitt"; */
+  font-size: 16px;
+}
+body {
   margin-right: auto;
   margin-left : auto;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+li {
+  list-style: none;
 }
 .main-header {
   position: fixed;
@@ -37,7 +44,7 @@ body {
 }
 .main-header li a {
   text-decoration: none;
-  color: #fff;
+  color: #1650dc;
   font-weight: bold;
 }
 .container {
@@ -59,11 +66,44 @@ body {
 .main {
   display: block;
   width: 100%;
+  height: 99%;
   background: #d5fffa;
   padding: 10px;
 }
 .main-footer {
   width: 100%;
-  height: 50px;
+  height: 5%;
+  max-height: 30px;
+  padding: 10px;
   background: #ebf397;
+}
+.input_form {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 15px;
+  height: 45px;
+  padding-left: 15px;
+  width: 250px;
+  font-size: 16px;
+}
+.email_form {
+  width: 600px;
+}
+.name_form {
+  width: 200px;
+}
+.column {
+  margin: 20px;
+}
+must {
+  margin-left: 5px;
+  color: #F00;
+}
+input.submit {
+  padding: 15px 40px;
+  font-size: 1.2em;
+  background-color: #3c5463;
+  color: #fff;
+  border-radius: 15px;
+  border-style: none;
 }

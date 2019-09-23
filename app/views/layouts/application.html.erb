@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
     <title>お土産検索</title>
+    <meta http-equiv="content-language" content="ja">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -12,7 +13,8 @@
   <body>
     <div class="main-header">
       <ul>
-        <li>新規登録</li>
+        <li><%= link_to "トップページ", :root %></li>
+        <li><%= link_to "新規登録", :sign_up %></li>
         <li>ログイン</li>
       </ul>
     </div>
