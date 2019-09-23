@@ -28,15 +28,15 @@ ActiveRecord::Schema.define(version: 2019_09_23_062651) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "user_id"
-    t.string "user_name"
-    t.string "last_name"
-    t.string "first_name"
-    t.string "email"
-    t.string "encrypted_password"
-    t.date "birthday"
-    t.integer "age_display_format"
-    t.integer "gender"
+    t.string "user_id", null: false
+    t.string "user_name", null: false
+    t.string "last_name", null: false
+    t.string "first_name", null: false
+    t.string "email", null: false
+    t.string "encrypted_password", null: false
+    t.date "birthday", null: false
+    t.integer "age_display_format", null: false
+    t.integer "gender", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
