@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_22_155827) do
+ActiveRecord::Schema.define(version: 2019_09_23_062651) do
 
   create_table "prefectures", force: :cascade do |t|
     t.integer "region_id", null: false
@@ -23,6 +23,20 @@ ActiveRecord::Schema.define(version: 2019_09_22_155827) do
   create_table "regions", force: :cascade do |t|
     t.string "name", null: false
     t.boolean "del_flg", default: false, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "user_id"
+    t.string "user_name"
+    t.string "last_name"
+    t.string "first_name"
+    t.string "email"
+    t.string "encrypted_password"
+    t.date "birthday"
+    t.integer "age_display_format"
+    t.integer "gender"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
