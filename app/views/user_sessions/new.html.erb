@@ -31,10 +31,19 @@
       </li>
     </div>
     <div class="column">
+      <label><%= f.label :encrypted_password, 'パスワード' %></label><must>*</must>
+      <li>
+        <%= f.text_field :encrypted_password, :class => "input_form email_form", :placeholder => "WIP WIP WIP WIP" %>
+      </li>
+    </div>
+    <div class="column">
       <label><%= f.label :birthday, '誕生日' %></label><must>*</must>
       <li>
         <%= f.text_field :birthday, :class => "input_form", :placeholder => "1991/10/20" %>
       </li>
+    </div>
+    <div class="column">
+      <label><%= f.label :gender, '性別' %></label><must>*</must>
     </div>
   </ul>
   <%= f.submit :class => "submit" %>
